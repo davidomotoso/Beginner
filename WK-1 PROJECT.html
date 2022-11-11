@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="wk-1 project">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WK-1 PROJECT</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background-color:#000000;
+                overflow: hidden;
+            }
+            .flex{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-left: 8em;
+                margin-bottom: -20em;
+                margin-top: -7px;
+            }
+            .one{
+                position: absolute;
+                bottom:46em;
+                gap:8px;
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 437px;
+                padding: 3em 0  3em 7em;
+                height:7em;
+                align-items: center;
+                left:7.5px;
+            }
+            #logo{
+                height: 90px;
+                width: 70px;
+            }
+           @font-face {
+            font-family: Norse-Bold;
+            src: url(NorseBold.otf);
+           }
+           h1{
+            font-family: Norse-Bold;
+            color:#ffffff;
+            font-size: 4em;
+            position: relative;
+            bottom: 2em;
+            left: 1.2em;
+           }
+            #plant{
+                height: 655px;
+            }
+            .up{
+                position: relative;
+                bottom: 2.3em;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                left:1em;
+            }
+            .first-sec{
+                background-color: #f4f4f7;
+                height: 34%;
+                width: 120%;
+                margin:-2em 0;
+            }
+            h5{
+                text-align: justify;
+                padding-right: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding-top: 4em;
+                padding-left: 1.5em;
+                font-size: 1em;
+                font-weight: 600;
+            }
+            .first-sec .next{
+                padding: 0 0 0 1.5em;
+                font-size: 1em;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .second-sec{
+                background-color: #ffffff;
+                height: 34%;
+                width: 120%;
+            }
+            h4{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                padding-left: 1.5em;
+                padding-top: 8px;
+                font-weight: 600;
+            }
+            label{
+                text-transform: uppercase;
+                padding-left: 1.5em;
+                font-size: 0.7em;
+                letter-spacing: 2px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top: -15px;
+                position: relative;
+                right:10.6em;
+            }
+            input{
+                color:#000000;
+                border-radius: 4px;
+                border:1px solid #E7E5EB;
+                width:200px;
+                padding: 2.5px;
+                outline: 0;
+            }
+           input:focus{
+            border:1px solid blue;
+           }
+            .second{
+                gap:30px;
+            }
+            form{
+                width:40%;
+            }
+            input[type="password"]{
+                border:1px solid red;
+            }
+            .names{
+                margin-top: 15px;
+            }
+            .third-sec{
+                background-color: #e2e2e2;
+                height: 36%;
+                width:120%;
+            }
+            button{
+                background-color: #596D48;
+                border: 1px solid #596D48;
+                margin: 2em 0 0 1.5em;
+                padding: 8px 25px;
+                border-radius: 3px;
+                color: white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 600;
+                font-size: 0.9em;
+            }
+            .green{
+                color: green;
+            }
+            .red{
+                letter-spacing: -0.45px;
+                text-transform: lowercase;
+                font-size: 1.1em;
+                margin: -2px 0;
+                color: red;
+            }
+            .underline{
+                text-decoration: underline;
+            }
+            .move p{
+                color:white;
+                position: relative;
+                top: 25.5em;
+                right: 7.1em;
+                font-size: 0.85em;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="flex">
+            <div class="move">
+                <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" 
+                alt="green  plant" id="plant">
+                <div class="flex one">
+                    <div class="up">
+                        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="logo" id="logo">
+                        <h1>ODIN</h1>
+                    </div>
+                    <p>Photo by <span class="underline" >Halle west</span> on <span class="underline">Unsplash</span> </p>
+                </div>
+            </div>
+            <form action="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png" method="post">
+                    <section class="first-sec">
+                        <h5>This is not a real  online service! 
+                            You need something<br> like this in your life to help you 
+                            realize your deepest dreams.
+                            <br>Sign up <i>now</i> to get started.
+                        </h5>
+                        <h5 class="next">You <i>know</i> you want to</h5>
+                    </section>
+                    <section class="second-sec">
+                        <h4>Let's do this!</h4>
+                        <div class="flex second">
+                            <label for="first-name" class="names">
+                                first name <br>
+                                <input type="text" name="first-name" id="first-name" placeholder="Thor"required>
+                            </label>
+                            <label for="last-name" class="names">last name
+                                <br>
+                                <input type="text" name="last-name" id="last-name" placeholder="Odinson" required>
+                            </label>
+                            <label for="email">email
+                                <br>
+                                <input type="email" name="user-email" id="email" required>
+                            </label>
+                            <label for="user-number">
+                                phone number
+                                <br>
+                                <input type="number" name="phone-number" id="user-number" required>
+                            </label>
+                            <label for="password">
+                                password
+                                <br>
+                                <input type="password" name="user-password" id="password" pattern="[a-z0-5] {8,}" required> 
+                                <p class="red">* passwords do not match</p>
+                            </label>
+                            <label for="confirm-password">
+                                confirm password
+                                <br>
+                                <input type="password" name="confirm-user-password" id="confirm-password" pattern="[a-z0-5] {8,}" required>
+                            </label>
+                        </div>
+                    </section>
+                    <section class="third-sec">
+                        <button type="button">Create account</button>
+                        <h4>Already have an account?<span class="green">Log in</span></h4>
+                    </section>
+            </form>
+        </div>   
+    </body>
+</html>
